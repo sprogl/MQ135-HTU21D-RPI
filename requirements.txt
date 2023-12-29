@@ -1,0 +1,4 @@
+adafruit-circuitpython-ads1x15>=2.2.25
+adafruit-circuitpython-htu21d>=0.11.14
+uvicorn>=0.24.0.post1
+fastapi>=0.105.0

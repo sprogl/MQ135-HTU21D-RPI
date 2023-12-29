@@ -1,0 +1,4 @@
+#!/bin/bash
+
+IP=$(ip addr show dev wlan0| grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')
+uvicorn main:app --host $IP --port 80

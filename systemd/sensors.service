@@ -1,0 +1,13 @@
+[Unit]
+Description=web server for sensors
+After=network.target
+
+[Service]
+WorkingDirectory=/root/app/
+ExecStart=/usr/bin/bash /root/app/run-server
+ExecStop=/usr/bin/bash /root/app/stop-server
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+RequiredBy=network.target
