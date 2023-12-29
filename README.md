@@ -3,8 +3,10 @@ A RESFT-based api that reads teprature/humidity/CO2 level  from HTU21D and MQ135
 
 # Install
 ```
+sudo su -
 apt install git
 git clone https://github.com/sprogl/MQ135-HTU21D-RPI.git
 cd MQ135-HTU21D-RPI
 sh install.sh
+exit
 ```
